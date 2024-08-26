@@ -8,12 +8,6 @@ I'am a moroccan computer science student at 1337 coding school, currently buildi
 
 Skills: C / C++ / github / HTML / CSS / JS
 
-- 🔭 I’m currently working on this page. 
-
-
-[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/tarikkudesu)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='40'>](https://www.instagram.com/Amehri Tarik/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg' alt='twitter' height='40'>](https://twitter.com/Amehri Tarik)  
-
-
 
 ## Languages and Tools
 
