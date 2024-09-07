@@ -1,6 +1,7 @@
 # 💫 About Me:
 ✨✨ Digital wizard ✨✨<br><br>Hi there 👋, Amehri Tarik<br><br>I'am a moroccan computer science student at 1337 coding school, currently building my version of the wonderfull digital world one step at a time. All coding projects are built from the ground up, from ideation, designing and planning, all the way to finalizing it my own artistic touches. All the project are built with care and proffessionalism and they are available on my github or in my portfolio, feel free to check it out :)
 
+Check out my Portfolio [here](https://tarikamehri.works)!
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/amehri_tarik?igsh=M3AxeXYwYWlodW5q) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/tarik-amehri-860bb3327/) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@https://medium.com/@alaricsaltzman913/42-cub3d-walk-2bd1d806e977) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://x.com/AmehriT83856?t=XK5JBaVLC-LdTguRyM4f_A&s=08) 
