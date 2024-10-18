@@ -1,5 +1,5 @@
 # 💫 About Me:
-✨✨ Digital wizard ✨✨<br><br>Hi there 👋, Amehri Tarik<br><br>I'am a moroccan computer science student at 1337 coding school, currently building my version of the wonderfull digital world one step at a time. All coding projects are built from the ground up, from ideation, designing and planning, all the way to finalizing it my own artistic touches. All the project are built with care and proffessionalism and they are available on my github or in my portfolio, feel free to check it out :)
+✨✨ Digital wizard ✨✨<br><br>Hi there 👋, Amehri Tarik<br><br>I'm a moroccan computer science student at 1337 coding school, currently building my version of the wonderfull digital world one step at a time. All coding projects are built from the ground up, from ideation, designing and planning, all the way to finalizing it my own artistic touches. All the project are built with care and proffessionalism and they are available on my github or in my portfolio, feel free to check it out :)
 
 Check out my Portfolio [here](https://tarikamehri.works)!
 
