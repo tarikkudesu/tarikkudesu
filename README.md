@@ -6,7 +6,7 @@ Check out my Portfolio [here](https://tarikamehri.works)!
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/amehri_tarik?igsh=M3AxeXYwYWlodW5q)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tarik-amehri?original_referer=)
-[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@alaricsaltzman913/42-cub3d-walk-2bd1d806e977)
+[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@amehri_tarik)
 [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/AmehriT83856?t=XK5JBaVLC-LdTguRyM4f_A&s=08) 
 
 # 💻 Tech Stack:
