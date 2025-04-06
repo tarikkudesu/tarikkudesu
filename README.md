@@ -3,6 +3,8 @@
 
 Check out my Portfolio [here](https://tarikamehri.works)!
 
+[![tamehri's 42 profile](https://42term.vercel.app/api/widget/student/tamehri?theme=dark)](https://42term.vercel.app)
+
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/amehri_tarik?igsh=M3AxeXYwYWlodW5q)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tarik-amehri?original_referer=)
