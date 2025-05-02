@@ -1,0 +1,52 @@
+[
+	{
+		"type": "A Writing",
+		"title": "A System Administration related Project, its aim is to discover the world of containerization",
+		"description": "This project is centered around the design, development, and organization of a full-stack web application.",
+		"md": "ft_transcendence.md",
+		"Languages": ["TypeScript", "Tailwind"],
+		"link": "",
+		"img": "test.png",
+		"date": "Most recent"
+	},
+	{
+		"type": "A Writing",
+		"title": "webserv",
+		"description": "It's time that we built our own HTTP web-server!",
+		"md": "Webserv.md",
+		"Languages": ["Cpp", "Makefile"],
+		"link": "https://github.com/tarikkudesu/webserv.git",
+		"img": "test.png",
+		"date": "14-02-2024"
+	},
+	{
+		"type": "A Writing",
+		"title": "Inception",
+		"description": "A System Administration related Project, its aim is to discover the world of containerization, to be more specific, creating images and running small-scale services inside a docker container.",
+		"md": "Inception.md",
+		"Languages": ["Docker", "docker-compose", "VirtualBox"],
+		"link": "https://github.com/tarikkudesu/Inception",
+		"img": "test.png",
+		"date": "13-02-2024"
+	},
+	{
+		"type": "A Writing",
+		"title": "CPP Modules",
+		"description": "Time to dive deeper into some of the most important c++ features, error handling, templates, containers...",
+		"md": "CPP Modules 02.md",
+		"Languages": ["Cpp", "Makefile"],
+		"link": "https://github.com/tarikkudesu/cpp_modules",
+		"img": "test.png",
+		"date": "12-02-2024"
+	},
+	{
+		"type": "A Writing",
+		"title": "CPP Modules",
+		"description": "Time to dive deeper into some of the most important c++ features, error handling, templates, containers...",
+		"md": "CPP Modules 02.md",
+		"Languages": ["Cpp", "Makefile"],
+		"link": "https://github.com/tarikkudesu/cpp_modules",
+		"img": "test.png",
+		"date": "12-02-2024"
+	}
+]

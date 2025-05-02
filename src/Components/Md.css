@@ -1,0 +1,71 @@
+@import '@radix-ui/themes/styles.css';
+@import 'tailwindcss';
+
+#md {
+	font-size: 14px;
+}
+#md h1,
+#md h2,
+#md h3,
+#md h4,
+#md h5,
+#md h6 {
+	@apply font-semibold;
+}
+#md h1 {
+	font-size: 20px;
+	@apply my-8;
+}
+#md h2 {
+	font-size: 19px;
+	@apply my-7;
+}
+#md h3 {
+	font-size: 18px;
+	@apply my-6;
+}
+#md h4 {
+	font-size: 17px;
+	@apply my-5;
+}
+#md h5 {
+	font-size: 16px;
+	@apply my-4;
+}
+#md h6 {
+	font-size: 15px;
+	@apply my-4;
+}
+#md p {
+	font-size: 14px;
+	@apply my-4;
+}
+#md hr {
+	@apply my-4;
+}
+#md blockquote {
+	@apply my-4;
+}
+#md blockquote p {
+	@apply pl-4 py-2 border-l-4 border-cyan-400;
+}
+#md ul {
+	@apply my-4 ml-4 text-gray-200;
+	list-style-type: disc;
+}
+#md pre {
+	background-color: var(--gray-1);
+	border-color: var(--gray-8);
+	@apply my-4 p-6 font-mono rounded-lg border-1;
+}
+#md :not(pre) code {
+	color: var(--accent-11);
+	@apply font-mono;
+}
+
+#md img {
+	@apply my-4 w-full rounded-xl;
+}
+#md a {
+	@apply text-cyan-400 hover:underline;
+}

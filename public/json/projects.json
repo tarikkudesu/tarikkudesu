@@ -1,0 +1,141 @@
+[
+	{
+		"type": "A 42 project",
+		"title": "webserv",
+		"description": "It's about time that I built my own HTTP web-server!",
+		"md": "Webserv.md",
+		"Languages": ["cpp", "Makefile"],
+		"link": "https://github.com/tarikkudesu/webserv.git",
+		"img": "Cpp.png",
+		"date": "14-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Inception",
+		"description": "It's about time that I started to Docker",
+		"md": "Inception.md",
+		"Languages": ["docker", "docker-compose", "virtual-box"],
+		"link": "https://github.com/tarikkudesu/Inception",
+		"img": "Docker.png",
+		"date": "13-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "CPP Modules 02",
+		"description": "It's about time to get serious with C++",
+		"md": "CPP Modules 02.md",
+		"Languages": ["cpp", "Makefile"],
+		"link": "https://github.com/tarikkudesu/cpp_modules",
+		"img": "Cpp.png",
+		"date": "12-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "CPP Modules 01",
+		"description": "IT's about time that I finaly coded with C++",
+		"md": "CPP Modules 01.md",
+		"Languages": ["cpp", "Makefile"],
+		"link": "https://github.com/tarikkudesu/cpp_modules",
+		"img": "Cpp.png",
+		"date": "11-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "cub3d",
+		"description": "It's about time that I built my own ray caster",
+		"md": "cub3d.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/Cub3d",
+		"img": "C.png",
+		"date": "10-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Philosophers",
+		"description": "It's about time that I made it parallel",
+		"md": "Philosophers.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/philosophers",
+		"img": "C.png",
+		"date": "09-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "minishell",
+		"description": "It's about time that I built my own shell",
+		"md": "minishell.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/minishell",
+		"img": "C.png",
+		"date": "08-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "FdF",
+		"description": "IT's about time that I gave it a GUI",
+		"md": "FdF.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/fdf",
+		"img": "fdf.png",
+		"date": "07-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "pipex",
+		"description": "It's about time that I forked more children processes",
+		"md": "pipex.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/pipex",
+		"img": "C.png",
+		"date": "06-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "push_swap",
+		"description": "It's about time that I started sorting numbers",
+		"md": "push_swap.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/push_swap",
+		"img": "C.png",
+		"date": "05-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Born2beroot",
+		"description": "It's about time that I became the sudo",
+		"md": "Born2beroot.md",
+		"Languages": ["linux", "virtual-box"],
+		"img": "Linux.png",
+		"date": "04-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "get_next_line",
+		"description": "It's about time that I built my own line getter",
+		"md": "get_next_line.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/get_next_line",
+		"img": "C.png",
+		"date": "03-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "printf",
+		"description": "It's about time that I built my own printer c function",
+		"md": "ft_printf.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/ft_printf",
+		"img": "C.png",
+		"date": "02-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Libft",
+		"description": "It's about time that I built my own c library",
+		"md": "Libft.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/Libft",
+		"img": "C.png",
+		"date": "01-02-2024"
+	}
+]

@@ -1,0 +1,160 @@
+[
+	{
+		"type": "A 42 project",
+		"title": "ft_transcendence",
+		"description": "This project is centered around the design, development, and organization of a full-stack web application.",
+		"md": "ft_transcendence.md",
+		"Languages": ["html", "typescript", "tailwind", "react", "docker", "docker-compose"],
+		"link": "",
+		"img": "test.png",
+		"date": "Most recent"
+	},
+	{
+		"type": "A 42 project",
+		"title": "webserv",
+		"description": "It's time that we built our own HTTP web-server!",
+		"md": "Webserv.md",
+		"Languages": ["cpp", "makefile"],
+		"link": "https://github.com/tarikkudesu/webserv.git",
+		"img": "test.png",
+		"date": "14-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Inception",
+		"description": "A System Administration related Project, its aim is to discover the world of containerization, to be more specific, creating images and running small-scale services inside a docker container.",
+		"md": "Inception.md",
+		"Languages": ["docker", "docker-compose", "virtual-box"],
+		"link": "https://github.com/tarikkudesu/Inception",
+		"img": "test.png",
+		"date": "13-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "CPP Modules 02",
+		"description": "Time to dive deeper into some of the most important c++ features, error handling, templates, containers...",
+		"md": "CPP Modules 02.md",
+		"Languages": ["cpp", "makefile"],
+		"link": "https://github.com/tarikkudesu/cpp_modules",
+		"img": "test.png",
+		"date": "12-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "NetPractice",
+		"description": "NetPractice is a general practical exercise to discover the world of networking by configuring small-scale networks, Understanding TCP/IP addressing is essential.",
+		"md": "NetPractice.md",
+		"Languages": ["networking"],
+		"img": "test.png",
+		"date": "12-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "CPP Modules 01",
+		"description": "It's time to dive into Object Oriented Programming!, This project contains 5 inner projects designed to understand the specifities of the c++ Languagesuage when compared to C and also understand new concepts like ploymorphism, overloads, inheritance, abstract classes...",
+		"md": "CPP Modules 01.md",
+		"Languages": ["cpp", "makefile"],
+		"link": "https://github.com/tarikkudesu/cpp_modules",
+		"img": "test.png",
+		"date": "11-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "cub3d",
+		"description": "This project is inspired by the world-famous eponymous 90's game, which was the first FPS ever. the program has to implement a ray-casting algorithm in order to make a dynamic view inside a maze, in which you'll have to find your way.",
+		"md": "cub3d.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/Cub3d",
+		"img": "test.png",
+		"date": "10-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Philosophers",
+		"description": "This project aims to teach concurrent programming, focusing on multithreading and multiprocessing.",
+		"md": "Philosophers.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/philosophers",
+		"img": "test.png",
+		"date": "09-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "minishell",
+		"description": "As the name suggests, the goal is creating a simple shell, it needs to implement the most essential features of a shell",
+		"md": "minishell.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/minishell",
+		"img": "test.png",
+		"date": "08-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "FdF",
+		"description": "An introduction to graphics, This project is about representing a landscape as a 3D object in which all surfaces are outlined in lines using a graphics library.",
+		"md": "FdF.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/fdf",
+		"img": "test.png",
+		"date": "07-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "pipex",
+		"description": "The aim of this project is to understand UNIX interprocess communication by implementing redirection and pipes in a c program.",
+		"md": "pipex.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/pipex",
+		"img": "test.png",
+		"date": "06-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "push_swap",
+		"description": "This project involves sorting data on a stack, with a limited set of instructions, and the smallest number of moves. acquiring the skills to manipulate various sorting algorithms and choose the most appropriate solution(s) for optimized data sorting is essential.",
+		"md": "push_swap.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/push_swap",
+		"img": "test.png",
+		"date": "05-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Born2beroot",
+		"description": "This project is an introduction to the wonderful world of virtualization and system administration, The goal is to create a virtual machine under specific instructions.",
+		"md": "Born2beroot.md",
+		"Languages": ["linux", "virtual-box"],
+		"img": "test.png",
+		"date": "04-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "get_next_line",
+		"description": "The goal of this project is to create a function that reads content line by line from a file, a network or even STDIN, an essential function for the upcoming projects.",
+		"md": "get_next_line.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/get_next_line",
+		"img": "test.png",
+		"date": "03-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "ft_printf",
+		"description": "The goal of this project is creating my own version of printf, It is to understand and implement a c variadic function.",
+		"md": "ft_printf.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/ft_printf",
+		"img": "test.png",
+		"date": "02-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Libft",
+		"description": "This project is about understanding and reimplementing some highly usefull c function into my own c library that will be used throughout the upcomming projects.",
+		"md": "Libft.md",
+		"Languages": ["c", "makefile"],
+		"link": "https://github.com/tarikkudesu/Libft",
+		"img": "test.png",
+		"date": "01-02-2024"
+	}
+]
