@@ -46,4 +46,4 @@ EA ./assets/east.xpm
 
 into somthing like this :
 
-![cub3dMap.png](/img/cub3dMap.png)
+![cub3dMap.png](/img/cub3d.png)

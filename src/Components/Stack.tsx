@@ -12,10 +12,6 @@ const Entity: React.FC<EntitiProps> = ({ children, name }) => {
 	return (
 		<Tooltip content={name}>
 			<Card className="opacity-70 hover:opacity-100 duration-100" size="3">
-				{/* <Box height="360px" width="360px">
-					<Flex align="center" justify="center">
-					</Flex>
-				</Box> */}
 				<Box height="36px" width="36px">
 					{children}
 				</Box>

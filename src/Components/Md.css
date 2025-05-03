@@ -47,10 +47,11 @@
 	@apply my-4;
 }
 #md blockquote p {
-	@apply pl-4 py-2 border-l-4 border-cyan-400;
+	border-left: solid 4px var(--accent-11);
+	@apply pl-4 py-2;
 }
 #md ul {
-	@apply my-4 ml-4 text-gray-200;
+	@apply my-4 ml-4;
 	list-style-type: disc;
 }
 #md pre {
@@ -67,5 +68,6 @@
 	@apply my-4 w-full rounded-xl;
 }
 #md a {
-	@apply text-cyan-400 hover:underline;
+	color: var(--accent-11);
+	@apply hover:underline;
 }

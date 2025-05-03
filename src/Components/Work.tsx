@@ -1,25 +1,12 @@
-import React from 'react';
 import { useQuery } from '@tanstack/react-query';
+import React from 'react';
 
-import {
-	Badge,
-	Box,
-	Card,
-	Flex,
-	Heading,
-	Inset,
-	ScrollArea,
-	Text,
-	Callout,
-	Spinner,
-	AlertDialog,
-	Button,
-	IconButton,
-} from '@radix-ui/themes';
-import { Pencil2Icon, OpenInNewWindowIcon, InfoCircledIcon, CaretRightIcon } from '@radix-ui/react-icons';
+import { Badge, Box, Card, Flex, Heading, Inset, ScrollArea, Text, Callout, Spinner, AlertDialog, Button } from '@radix-ui/themes';
+import { Pencil2Icon, InfoCircledIcon, CaretRightIcon } from '@radix-ui/react-icons';
 import { ShowCase, Template } from '../Functionaity/Interfaces';
-import { Frame } from './Mini';
 import { marked } from 'marked';
+import { Frame } from './Mini';
+
 import './Md.css';
 
 interface MarkdownProps {

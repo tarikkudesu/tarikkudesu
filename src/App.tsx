@@ -17,6 +17,7 @@ const App: React.FC<unknown> = () => {
 		if (theme === 'light') setTheme('dark');
 		else setTheme('light');
 	}
+
 	return (
 		<QueryClientProvider client={queryClient}>
 			<Theme appearance={theme} accentColor="yellow" grayColor="sand">
@@ -26,7 +27,7 @@ const App: React.FC<unknown> = () => {
 					</Routes>
 				</BrowserRouter>
 				{/* <ThemePanel /> // ! remove later */}
-				<ReactQueryDevtools /> // ! remove later
+				{/* <ReactQueryDevtools /> */}
 			</Theme>
 		</QueryClientProvider>
 	);
