@@ -22,10 +22,12 @@ const Header: React.FC<HeaderProps> = ({ changeTheme, theme }) => {
 				className="border-b-1 border-gray-500/50 fixed z-10"
 				style={{ backgroundColor: 'var(--gray-2)' }}
 			>
-				<Avatar size="2" src={theme === 'dark' ? '/logowhite.png' : '/logo.png'} fallback="Tr." />
+				<Link href="#">
+					<Avatar size="2" src={theme === 'dark' ? '/logowhite.png' : '/logo.png'} fallback="Tr." />
+				</Link>
 				<Flex align="center" gap="5">
 					<IconButton variant="ghost" size="3" color="gray">
-						<Link href="https://github.com/tarikkudesu" target='_blank'>
+						<Link href="https://github.com/tarikkudesu" target="_blank">
 							<GitHubLogoIcon />
 						</Link>
 					</IconButton>

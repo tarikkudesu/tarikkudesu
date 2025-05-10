@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = ({ theme }) => {
 	return (
 		<footer>
 			<Frame className="py-12 border-t-1 border-gray-500/50">
-				<Grid columns="3" gap="9" width="auto">
+				<Grid columns={{ initial: '1', sm: '3' }} gap="9" width="auto">
 					<Avatar size="2" src={theme === 'dark' ? '/logowhite.png' : '/logo.png'} fallback="Tr." />
 					<Flex direction="column" gap="2">
 						<Text size="3" className="font-bold">
