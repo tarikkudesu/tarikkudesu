@@ -1,24 +1,24 @@
 ## Overview
 
-This project is inspired by the world-famous eponymous 90's game, which was the first FPS ever. the program has to implement a ray-casting algorithm in order to make a dynamic view inside a maze, in which you'll have to find your way.
+This project is inspired by the world-famous eponymous 90's game, which was the first FPS ever. The program has to implement a ray-casting algorithm in order to make a dynamic view inside a maze, in which you'll have to find your way.
 
 ## Requirements :
 
--   The program must be written in C, a Makefile must be provided.
--   Memory leaks are not to be tolerated.
--   The use of the 42 `minilibx` is mandatory.
--   The program has to display an image in a window.
--   The management of the window must remain smooth.
--   Pressing ESC must close the window and quit the program in a clean way.
--   Clicking on the cross on the window’s frame must close the window and quit the program in a clean way.
--   Your program must take a configuration file containing a map, textures, colors, it must parsed and checked if the map is closed, if not display an error.
--   Display different wall textures that vary depending on which side the wall is facing (North, South, East, West).
--   Set the floor and ceiling colors to two different ones.
--   The left and right arrow keys must allow you to look left and right in the maze.
--   The W, A, S, and D keys must allow you to move the point of view through the maze.
--   The player must not traverse walls.
--   As a bonus, add animated doors that open and close, animated sprites, mouse control, and a minimap.
--   Your program must be able to turn somthing like this :
+-   This project is implemented in c and is compilable with a makefile.
+-   Memory leaks free, Memory leaks are not to be tolerated.
+-   Error free, an error displayed in case something went wrong.
+-   The program uses the 42 `minilibx` as a graphics library.
+-   The management of the window remains smooth throught the program lifespan.
+-   Pressing ESC closes the window and quits the program in a clean way.
+-   Clicking on the cross on the window’s frame also closes the window and quit the program in a clean way.
+-   The program takes a configuration file containing a map, textures, and colors that is parsed and checked.
+-	It does not take an open map.
+-   It Displays different wall textures that vary depending on which side the wall the player is facing (North, South, East, West) and sets the floor and ceiling colors to two different ones.
+-   The left and right arrow keys will allow you to look left and right in the maze.
+-   The W, A, S, and D keys will allow you to move the point of view through the maze.
+-   The player does not traverse walls.
+-   As a bonus. The mase can have animated doors that open and close, animated sprites, mouse control and a minimap.
+-   The program is able to transform a map like this :
 
 ```bash
 F 139,99,58

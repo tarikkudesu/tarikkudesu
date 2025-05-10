@@ -2,7 +2,7 @@
 	{
 		"type": "A 42 project",
 		"title": "webserv",
-		"description": "It's about time that I built my own HTTP web-server!.",
+		"description": "It's about time that I built my own HTTP web-server!",
 		"md": "Webserv.md",
 		"Languages": ["cpp", "Makefile"],
 		"link": "https://github.com/tarikkudesu/webserv.git",
@@ -14,7 +14,7 @@
 		"title": "Inception",
 		"description": "It's about time that I started to Docker.",
 		"md": "Inception.md",
-		"Languages": ["docker", "docker-compose", "virtual-box"],
+		"Languages": ["docker", "docker-compose", "virtual-box", "Wordpress", "Nginx", "MariaDb", "redis", "FTP", "adminer"],
 		"link": "https://github.com/tarikkudesu/Inception",
 		"img": "Docker.png",
 		"date": "13-02-2024"
@@ -22,7 +22,7 @@
 	{
 		"type": "A 42 project",
 		"title": "CPP Modules 02",
-		"description": "It's about time to get serious with C++.",
+		"description": "It's about time that I got serious with C++.",
 		"md": "CPP Modules 02.md",
 		"Languages": ["cpp", "Makefile"],
 		"link": "https://github.com/tarikkudesu/cpp_modules",
@@ -32,7 +32,7 @@
 	{
 		"type": "A 42 project",
 		"title": "CPP Modules 01",
-		"description": "IT's about time that I finaly coded with C++.",
+		"description": "It's about time that I finaly coded in C++.",
 		"md": "CPP Modules 01.md",
 		"Languages": ["cpp", "Makefile"],
 		"link": "https://github.com/tarikkudesu/cpp_modules",
@@ -46,7 +46,7 @@
 		"md": "cub3d.md",
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/Cub3d",
-		"img": "C.png",
+		"img": "cub3d.png",
 		"date": "10-02-2024"
 	},
 	{
@@ -105,6 +105,7 @@
 		"description": "It's about time that I became the sudo.",
 		"md": "Born2beroot.md",
 		"Languages": ["linux", "virtual-box"],
+		"link": "https://github.com/tarikkudesu",
 		"img": "Linux.png",
 		"date": "04-02-2024"
 	},

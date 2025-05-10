@@ -5,9 +5,10 @@ import { Flex, Avatar, IconButton, Link } from '@radix-ui/themes';
 
 interface HeaderProps {
 	changeTheme: () => void;
+	theme: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ changeTheme }) => {
+const Header: React.FC<HeaderProps> = ({ changeTheme, theme }) => {
 	return (
 		<>
 			<Flex
@@ -21,10 +22,10 @@ const Header: React.FC<HeaderProps> = ({ changeTheme }) => {
 				className="border-b-1 border-gray-500/50 fixed z-10"
 				style={{ backgroundColor: 'var(--gray-2)' }}
 			>
-				<Avatar size="2" src="src/assets/logowhite.png" fallback="Tr." />
+				<Avatar size="2" src={theme === 'dark' ? '/logowhite.png' : '/logo.png'} fallback="Tr." />
 				<Flex align="center" gap="5">
 					<IconButton variant="ghost" size="3" color="gray">
-						<Link href="https://github.com/tarikkudesu">
+						<Link href="https://github.com/tarikkudesu" target='_blank'>
 							<GitHubLogoIcon />
 						</Link>
 					</IconButton>

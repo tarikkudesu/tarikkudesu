@@ -15,28 +15,30 @@ const Intro: React.FC<unknown> = () => {
 				</Badge>
 				<Box height="12px"></Box>
 				<Box>
-					<Text as="div" weight="medium" align="center" size="9">
+					<Text as="div" weight="bold" align="center" size={{ initial: '8', lg: '9' }}>
 						I Build & Deploy
 					</Text>
 					<Box height="8px"></Box>
-					<Text as="div" weight="medium" align="center" size="9">
+					<Text as="div" weight="bold" align="center" size={{ initial: '8', lg: '9' }}>
 						You
-						<Text style={{ color: 'var(--accent-11)' }} className="pl-4">
+						<Text style={{ color: 'var(--accent-10)' }} className="pl-4">
 							Interact
 						</Text>{' '}
 						&
-						<Text style={{ color: 'var(--accent-11)' }} className="pl-4">
+						<Text style={{ color: 'var(--accent-10)' }} className="pl-4">
 							Enjoy
 						</Text>
 					</Text>
 				</Box>
-				<Box height="24px"></Box>
-				<Text as="div" align="center" size="2">
-					My name is <Strong>Tarik Amehri</Strong>, <Strong>Software Engineer</Strong> / <Strong>Front-End Developer</Strong>
+				<Box height="36px"></Box>
+				<Text as="div" align="center" size="4">
+					My name is <Strong>Tarik Amehri</Strong>
+					<br />
+					<Strong>Software Engineer</Strong> / <Strong>Front-End Developer</Strong>
 				</Text>
 				<Text as="div" align="center" className="max-w-200" size="2">
 					A computer science student at{' '}
-					<Link href="https://1337.ma/en/" weight="medium" style={{ color: 'var(--accent-11)' }}>
+					<Link href="https://1337.ma/en/" weight="bold">
 						1337 coding school
 					</Link>
 					, currently crafting my version of the wonderfull digital world one step at a time. I think about every detail in my
@@ -44,12 +46,12 @@ const Intro: React.FC<unknown> = () => {
 				</Text>
 				<Box height="46px"></Box>
 				<Flex gap="4">
-					<Link href="#" className="cursor-pointer">
+					<Link href="#work" className="cursor-pointer">
 						<Button size="2" variant="solid">
 							Projects
 						</Button>
 					</Link>
-					<Link href="#" className="cursor-pointer">
+					<Link href="/Amehri Tarik.pdf" download="Amehri Tarik.pdf" className="cursor-pointer">
 						<Button size="2" variant="outline">
 							<Flex align="center" gap="2">
 								Resume

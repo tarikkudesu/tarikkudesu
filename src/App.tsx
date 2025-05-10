@@ -20,10 +20,10 @@ const App: React.FC<unknown> = () => {
 
 	return (
 		<QueryClientProvider client={queryClient}>
-			<Theme appearance={theme} accentColor="yellow" grayColor="sand">
+			<Theme appearance={theme} accentColor="ruby" grayColor="mauve">
 				<BrowserRouter>
 					<Routes>
-						<Route index element={<Home changeTheme={changeTheme} />} />
+						<Route index element={<Home changeTheme={changeTheme} theme={theme} />} />
 					</Routes>
 				</BrowserRouter>
 				{/* <ThemePanel /> // ! remove later */}

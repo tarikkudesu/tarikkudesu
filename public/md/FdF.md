@@ -4,18 +4,19 @@ An introduction to graphics, This project is about representing a landscape as a
 
 ## Requirements :
 
--   The program must be written in C, a Makefile must be provided.
--   Memory leaks are not to be tolerated.
--   The use of the 42 `minilibx` is mandatory.
--   The program has to display an image in a window.
--   The management of the window must remain smooth.
--   Pressing ESC must close the window and quit the program in a clean way.
--   Clicking on the cross on the window’s frame must close the window and quit the program in a clean way.
--   The program has to represent the model in **isometric projection.**
--   The coordinates of the landscape are stored in a `.fdf` file passed as a parameter to the program.
--   Include one extra projection (Orthigraphic).
--   You should be able to Zoom in and out, Translate your model, Rotate your model.
--   The program should be able to transform a map like this :
+-   This project is implemented in c and is compilable with a makefile.
+-   Memory leaks free, Memory leaks are not to be tolerated.
+-   Error free, an error displayed in case something went wrong.
+-   The program uses the 42 `minilibx` as a graphics library.
+-   The management of the window remains smooth throught the program lifespan.
+-   Pressing ESC closes the window and quits the program in a clean way.
+-   Clicking on the cross on the window’s frame also closes the window and quit the program in a clean way.
+-   The program takes a map and transforms it into a 3d landscape and displays a landscap in a window using an **isometric projection.**.
+-   The coordinates of the landscape can be stored in a `.fdf` file passed as a parameter to the program.
+-   As a bonus The program Includes the following extra features:
+-   an extra projection **Orthigraphic**.
+-   The ability to Zoom in and out, Translate and Rotate the model.
+-   The program is able to transform a map like this :
 
 ```perl
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -34,3 +35,23 @@ An introduction to graphics, This project is about representing a landscape as a
 Into something like this.
 
 ![fdf.png](img/fdf.png)
+
+## User interface
+
+![fdf.png](img/fdfui1.png)
+
+![fdf.png](img/fdfui2.png)
+
+[Read my explanation of the concepts and algorithms used](https://medium.com/@amehri_tarik/fdf-42-a-detailed-walkthrough-7184cca317fc)
+
+## New Concepts
+
+-   Pixel-Based Thinking
+-   Color Models: RGB, Hexadecimal color representation, alpha channel
+-   Rendering Loop
+-   Input Handling
+-   Graphics Libraries and APIs
+-   Working with Images and Textures
+-   Image buffering
+-   Frame Control
+-   Math for Graphics: Vector math and Trigonometry

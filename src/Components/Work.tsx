@@ -1,7 +1,22 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 
-import { Badge, Box, Card, Flex, Heading, Inset, ScrollArea, Text, Callout, Spinner, AlertDialog, Button } from '@radix-ui/themes';
+import {
+	Badge,
+	Box,
+	Card,
+	Flex,
+	Heading,
+	Inset,
+	ScrollArea,
+	Text,
+	Callout,
+	Spinner,
+	AlertDialog,
+	Button,
+	Grid,
+	Link,
+} from '@radix-ui/themes';
 import { Pencil2Icon, InfoCircledIcon, CaretRightIcon } from '@radix-ui/react-icons';
 import { ShowCase, Template } from '../Functionaity/Interfaces';
 import { marked } from 'marked';
@@ -62,7 +77,7 @@ const PeiceOfWork: React.FC<PeiceOfWorkProps> = ({ project }) => {
 			);
 	}
 	return (
-		<Box className="cursor-pointer">
+		<Flex className="cursor-pointer" justify="center">
 			<AlertDialog.Root>
 				<AlertDialog.Trigger>
 					<Card size="3" style={{ width: 360, height: 300 }} className="relative cursor-pointer">
@@ -96,12 +111,14 @@ const PeiceOfWork: React.FC<PeiceOfWorkProps> = ({ project }) => {
 				<AlertDialog.Content size="3">
 					<Flex gap="3" justify="end">
 						<AlertDialog.Cancel>
-							<Button variant="outline" color="gray">
+							<Button style={{ outline: 'none' }} variant="outline" color="gray">
 								Cancel
 							</Button>
 						</AlertDialog.Cancel>
 						<AlertDialog.Action>
-							<Button variant="solid">Github</Button>
+							<Link href={project.link} target="_blank">
+								<Button variant="solid">Github</Button>
+							</Link>
 						</AlertDialog.Action>
 					</Flex>
 					<Box height="12px" />
@@ -116,7 +133,7 @@ const PeiceOfWork: React.FC<PeiceOfWorkProps> = ({ project }) => {
 					<Box py="4">{CondotionalComponent()}</Box>
 				</AlertDialog.Content>
 			</AlertDialog.Root>
-		</Box>
+		</Flex>
 	);
 };
 
@@ -149,17 +166,25 @@ const Work: React.FC<unknown> = () => {
 				</Callout.Root>
 			);
 		return (
-			<ScrollArea type="always" scrollbars="horizontal" className="pb-8 overflow-hidden" radius="medium">
-				<Flex gap="7" justify="between">
+			<>
+				<Grid gap="7" columns={{ md: '2', lg: '3' }}>
 					{data.map((ele: Template, index: number) => (
 						<PeiceOfWork project={ele} key={index} />
 					))}
-				</Flex>
-			</ScrollArea>
+				</Grid>
+				{/* <ScrollArea type="always" scrollbars="horizontal" className="pb-8 overflow-hidden" radius="medium">
+					<Flex gap="7" justify="between">
+						{data.map((ele: Template, index: number) => (
+							<PeiceOfWork project={ele} key={index} />
+						))}
+					</Flex>
+				</ScrollArea> */}
+			</>
 		);
 	}
 	return (
 		<>
+			<div id="work"></div>
 			<Frame className="py-24">
 				<Badge variant="soft" radius="full">
 					<Flex gap="2" align="center" px="2">

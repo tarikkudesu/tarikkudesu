@@ -21,3 +21,17 @@ This project is an introduction to the wonderful world of virtualization and sys
 -   Limit Authentication using sudo to 3 attempts.
 -   Actions using sudo have to be archived.
 -   You have to create a simple script that displays system informations every 10 minutes from server startup.
+
+## New Concepts
+
+-   Hypervisors
+-   Virtual Machines (VMs)
+-   Virtualization
+-   Virtual Networking
+-   Disk partitioning and file systems
+-   Operating System Installation & Configuration
+-   User and Permission Management
+-   Package Management with apt
+-   System Monitoring: CPU, memory, disk, and process monitoring
+-   Firewall and Security
+-   Automation and Scripting
