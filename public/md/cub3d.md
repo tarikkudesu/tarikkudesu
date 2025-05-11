@@ -11,7 +11,7 @@ This project is inspired by the world-famous eponymous 90's game, which was the 
 -   The management of the window remains smooth throught the program lifespan.
 -   Pressing ESC closes the window and quits the program in a clean way.
 -   Clicking on the cross on the window’s frame also closes the window and quit the program in a clean way.
--   The program takes a configuration file containing a map, textures, and colors that is parsed and checked.
+-   The program takes a configuration file containing a map, textures, and colors that are parsed and checked.
 -	It does not take an open map.
 -   It Displays different wall textures that vary depending on which side the wall the player is facing (North, South, East, West) and sets the floor and ceiling colors to two different ones.
 -   The left and right arrow keys will allow you to look left and right in the maze.
