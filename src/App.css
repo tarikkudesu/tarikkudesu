@@ -4,3 +4,12 @@
 html {
 	scroll-behavior: smooth;
 }
+
+.text-outline {
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-text-stroke: 1px white;
+	-webkit-text-fill-color: transparent;
+}

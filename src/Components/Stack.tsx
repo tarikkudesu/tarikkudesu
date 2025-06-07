@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 import { Flex, Card, Heading, Box, Text, Badge, Tooltip } from '@radix-ui/themes';
 import { CardStackIcon } from '@radix-ui/react-icons';
@@ -34,7 +34,7 @@ const Stack: React.FC<unknown> = () => {
 		setTech(t);
 	}
 	return (
-		<Frame className="py-24">
+		<Frame className="py-24 relative">
 			<Badge variant="soft" radius="full">
 				<Flex gap="2" align="center" px="2">
 					My Top
@@ -48,8 +48,13 @@ const Stack: React.FC<unknown> = () => {
 				The technology is just a tool and can be outdated anytime, The most important thing is adaptability.
 			</Text>
 			<Box height="46px" />
-			<Heading align="center">{tech}</Heading>
-			<Box height="46px" />
+			<Heading
+				align="center"
+				style={{ fontSize: 180 }}
+				className="text-outline font-mono uppercase absolute top-0 right-0 opacity-20"
+			>
+				{tech}
+			</Heading>
 			<Flex gap="8" justify="between" className="flex-wrap">
 				<Entity update={update} name="Docker">
 					<svg viewBox="0 0 128 128">

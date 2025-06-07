@@ -20,33 +20,33 @@ export const Decorators: React.FC<unknown> = () => {
 				height="200px"
 				width="200px"
 				className="opacity-25 absolute"
-				top="0px"
-				left="50%"
-				style={{ borderColor: 'var(--gray-9)', borderWidth: 1, borderRadius: '50%', transform: 'translateX(-50%)' }}
+				top="50%"
+				left="100%"
+				style={{ borderColor: 'var(--gray-9)', borderWidth: 1, borderRadius: '50%', transform: 'translateX(-100%)' }}
 			></Box>
 			<Box
 				height="400px"
 				width="400px"
 				className="opacity-25 absolute"
-				top="0px"
-				left="50%"
-				style={{ borderColor: 'var(--gray-9)', borderWidth: 1, borderRadius: '50%', transform: 'translateX(-50%)' }}
+				top="50%"
+				left="100%"
+				style={{ borderColor: 'var(--gray-9)', borderWidth: 1, borderRadius: '50%', transform: 'translateX(-100%)' }}
 			></Box>
 			<Box
 				height="600px"
 				width="600px"
 				className="opacity-25 absolute"
-				top="0px"
-				left="50%"
-				style={{ borderColor: 'var(--gray-9)', borderWidth: 1, borderRadius: '50%', transform: 'translateX(-50%)' }}
+				top="50%"
+				left="100%"
+				style={{ borderColor: 'var(--gray-9)', borderWidth: 1, borderRadius: '50%', transform: 'translateX(-100%)' }}
 			></Box>
 			<Box
 				height="1000px"
 				width="1000px"
 				className="opacity-25 absolute"
-				top="0px"
-				left="50%"
-				style={{ borderColor: 'var(--gray-9)', borderWidth: 1, borderRadius: '50%', transform: 'translateX(-50%)' }}
+				top="50%"
+				left="100%"
+				style={{ borderColor: 'var(--gray-9)', borderWidth: 1, borderRadius: '50%', transform: 'translateX(-100%)' }}
 			></Box>
 		</Box>
 	);

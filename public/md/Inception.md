@@ -2,30 +2,44 @@
 
 A System Administration related Project, its aim is to discover the world of containerization, to be more specific, creating images and running small-scale services inside a docker container.
 
-## Requirements :
+## Description
 
--   This project need to be done on a Virtual Machine.
--   A Makefile must be provided and it must be able to set up and mange the entire application. it has to build the Docker images using `docker-compose.yml` .
--   This project consists in having you set up a small infrastructure composed of different services under specific rules.
--   The containers must be built either from stable version of `Alpine` or `Debian`.
--   You have to write your own `Dockerfiles`, one per service. The Dockerfiles must be called in your `docker-compose.yml` by your Makefile.
--   You have to build your own images, it is forbidden to pull ready image. use an image of your choice `Alpine` or `Debian` only.
--   You have to set up a Docker container that contains NGINX with `TLSv1.2` or `TLSv1.3` only.
--   You have to set up a Docker container that contains WordPress + php-fpm only.
--   You have to set up a Docker container that contains MariaDB only.
--   You have to set up a volume that contains your WordPress database.
--   You have to set up a second volume that contains your WordPress website files.
--   You have to set up a docker-network that establishes the connection between your containers.
--   Your containers have to restart in case of a crash.
--   Ther must be two users in your WordPress database. a root user and a user of your choice.
--   You have to configure your domain name so it points to your local IP address.
--   The latest tag is prohibited.
--   You have to use environment variables to store important credentials.
--   Your service must only be accessible through port 443.
--   The wordpress container and the database container must be able to communicate through port 3306.
--   The wordpress container and the NGINX container must be able to communicate through port 9000.
--   You have to Set up redis cache for your WordPress website in order to properly manage the cache.
--   You have to set up a `FTP server` container pointing to the volume of your WordPress website.
--   Create a simple static website in the language of your choice except PHP.
--   You have to set up `Adminer`.
--   Add a service of your choice.
+-   The entire application is managed through a Makefile that handles common operations (run, build, deploy, etc.)
+-   All containers are built using the latest stable version of **Debian** as the base image
+-   The FTP container provides direct access to the WordPress volume
+-   The backup service monitors both WordPress and database volumes, storing backups in a dedicated volume
+-   Container restart policies ensure automatic recovery from crashes
+-   WordPress installation includes both root and regular user accounts configured during container initialization
+-   Deploy on a virtual machine and configure domain name resolution to point to the local IP address for testing
+-   Sensitive credentials are managed through a **`.env`** file
+-   Each service has its own dedicated **Dockerfile** with service-specific configurations
+-   All Dockerfiles are orchestrated through a **docker-compose.yml** file
+-   The Makefile triggers the Docker Compose operations
+
+### Services
+
+-   **nginx** - Web server
+-   **mariadb** - Database service
+-   **wordpress** - Content management system
+-   **redis** - Caching service
+-   **adminer** - Database administration interface
+-   **ftp** - File transfer service
+-   **backup** - Automated backup service
+-   **static website** - Static content hosting
+
+### Volumes
+
+-   Three Docker volumes are configured:
+    -   WordPress database storage
+    -   WordPress installation files
+    -   Backup storage
+
+### Networking && Port configuration
+
+-   All services communicate through a dedicated Docker network defined in the **docker-compose.yml**
+    -   **443** - Main application access (HTTPS)
+    -   **3306** - WordPress to MariaDB communication
+    -   **9000** - WordPress to NGINX communication
+    -   **6379** - Redis service access
+    -   **8080** - Adminer interface access
+    -   **1200** - Static website access

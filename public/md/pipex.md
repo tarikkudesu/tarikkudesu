@@ -2,9 +2,9 @@
 
 The aim of this project is to understand UNIX interprocess communication by implementing redirections and pipes in a c program.
 
-## Requirements :
+## Description
 
--   This project is implemented in c and is compilable with a makefile.
+-   This project is implemented in c and is compilable with a Makefile.
 -   Memory leaks free, Memory leaks are not to be tolerated.
 -   Error free, an error displayed in case something went wrong.
 -   The program takes four arguments : file1 cmd1 cmd2 file2

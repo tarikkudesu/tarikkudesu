@@ -1,11 +1,21 @@
 [
 	{
+		"type": "A self hosted project",
+		"title": "verses",
+		"description": "It's about time that I built my own React app",
+		"md": "Verses.md",
+		"Languages": ["TypeScript", "ReactJS", "tailwindcss", "Vite"],
+		"link": "git@github.com:tarikkudesu/verses_web_app.git",
+		"img": "Web.png",
+		"date": "20-03-2024"
+	},
+	{
 		"type": "A 42 project",
 		"title": "webserv",
 		"description": "It's about time that I built my own HTTP web-server!",
 		"md": "Webserv.md",
 		"Languages": ["cpp", "Makefile"],
-		"link": "https://github.com/tarikkudesu/webserv.git",
+		"link": "https://github.com/tarikkudesu/server.git",
 		"img": "Cpp.png",
 		"date": "14-02-2024"
 	},
@@ -21,19 +31,9 @@
 	},
 	{
 		"type": "A 42 project",
-		"title": "CPP Modules 02",
-		"description": "It's about time that I got serious with C++.",
-		"md": "CPP Modules 02.md",
-		"Languages": ["cpp", "Makefile"],
-		"link": "https://github.com/tarikkudesu/cpp_modules",
-		"img": "Cpp.png",
-		"date": "12-02-2024"
-	},
-	{
-		"type": "A 42 project",
-		"title": "CPP Modules 01",
+		"title": "CPP Modules",
 		"description": "It's about time that I finaly coded in C++.",
-		"md": "CPP Modules 01.md",
+		"md": "CPP Modules.md",
 		"Languages": ["cpp", "Makefile"],
 		"link": "https://github.com/tarikkudesu/cpp_modules",
 		"img": "Cpp.png",
