@@ -48,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({ theme }) => {
 						</Flex>
 						<Flex gap="2" align="center">
 							<Link href="https://www.linkedin.com/in/tarik-amehri" underline="hover" color="gray" size="2">
-								LinkIn
+								LinkedIn
 							</Link>
 							<ArrowTopRightIcon />
 						</Flex>

@@ -27,7 +27,7 @@ const Entity: React.FC<EntityProps> = ({ place, date, diploma }) => {
 };
 const Me: React.FC<unknown> = () => {
 	return (
-		<Frame className="py-24">
+		<Frame className="py-48">
 			<Heading size="8">Experience & Education</Heading>
 			<Box height="12px" />
 			<Text as="div" size="2" className="opacity-70">

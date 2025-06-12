@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Theme } from '@radix-ui/themes';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import Home from './Components/Home';
 import './App.css';
@@ -22,6 +22,16 @@ const App: React.FC<unknown> = () => {
 				<BrowserRouter>
 					<Routes>
 						<Route index element={<Home changeTheme={changeTheme} theme={theme} />} />
+						<Route
+							path="*"
+							element={
+								<div className="py-24">
+									<div className="p-4 py-1 max-w-160 mx-auto text-center text-4xl font-semibold rounded-lg text-red-500 bg-red-700/10">
+										404
+									</div>
+								</div>
+							}
+						/>
 					</Routes>
 				</BrowserRouter>
 				{/* <ThemePanel /> */}

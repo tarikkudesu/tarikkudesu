@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 
-import { Badge, Box, Card, Flex, Heading, Inset, ScrollArea, Text, Callout, Spinner, Button, Grid, Link, Dialog } from '@radix-ui/themes';
+import { Badge, Box, Flex, Heading, ScrollArea, Text, Callout, Spinner, Button, Grid, Dialog, Link, Card, Inset } from '@radix-ui/themes';
 import { Pencil2Icon, InfoCircledIcon, CaretRightIcon } from '@radix-ui/react-icons';
 import { ShowCase, Template } from '../Functionaity/Interfaces';
 import { marked } from 'marked';
@@ -12,7 +12,7 @@ import './Md.css';
 interface MarkdownProps {
 	markdown: string;
 }
-const Markdown: React.FC<MarkdownProps> = ({ markdown }) => {
+export const Markdown: React.FC<MarkdownProps> = ({ markdown }) => {
 	const html = marked(markdown);
 	return <div id="md" dangerouslySetInnerHTML={{ __html: html }} />;
 };
@@ -22,7 +22,7 @@ interface PeiceOfWorkProps {
 }
 const PeiceOfWork: React.FC<PeiceOfWorkProps> = ({ project }) => {
 	async function fetchData() {
-		const response = await fetch('md/' + project.md);
+		const response = await fetch('/md/' + project.md);
 		return response.text();
 	}
 	const { isLoading, error, data } = useQuery({
@@ -159,11 +159,11 @@ const Work: React.FC<unknown> = () => {
 	return (
 		<>
 			<div id="work"></div>
-			<Frame className="py-24">
+			<Frame className="py-48">
 				<Badge variant="soft" radius="full">
 					<Flex gap="2" align="center" px="2">
-						Built It Myself
 						<Pencil2Icon />
+						Built It Myself
 					</Flex>
 				</Badge>
 				<Box height="12px" />

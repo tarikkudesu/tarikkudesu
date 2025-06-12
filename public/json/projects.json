@@ -6,7 +6,7 @@
 		"md": "Verses.md",
 		"Languages": ["TypeScript", "ReactJS", "tailwindcss", "Vite"],
 		"link": "git@github.com:tarikkudesu/verses_web_app.git",
-		"img": "Web.png",
+		"img": "WebTs.png",
 		"date": "20-03-2024"
 	},
 	{
@@ -28,6 +28,16 @@
 		"link": "https://github.com/tarikkudesu/Inception",
 		"img": "Docker.png",
 		"date": "13-02-2024"
+	},
+	{
+		"type": "A 42 project",
+		"title": "Sora",
+		"description": "It's about time that I made it asynchronous.",
+		"md": "Sora.md",
+		"Languages": ["Html", "Css", "JavaScript"],
+		"link": "https://github.com/tarikkudesu/sora",
+		"img": "WebJs.png",
+		"date": "11-08-2024"
 	},
 	{
 		"type": "A 42 project",

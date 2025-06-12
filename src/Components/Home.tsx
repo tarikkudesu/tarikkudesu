@@ -6,7 +6,7 @@ import Intro from './Intro';
 import Stack from './Stack';
 import Work from './Work';
 import { Box } from '@radix-ui/themes';
-import { Decorators } from './Mini';
+import Team from './Team';
 
 interface HomeProps {
 	theme: string;
@@ -15,10 +15,10 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ changeTheme, theme }) => (
 	<div className="overflow-hidden">
 		<Header changeTheme={changeTheme} theme={theme} />
-		<Decorators />
 		<Intro />
 		<Stack />
 		<Work />
+		<Team />
 		<Box height="200px" />
 		<Footer theme={theme} />
 	</div>
