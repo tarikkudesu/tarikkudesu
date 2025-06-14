@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, useContext, MouseEvent, TouchEvent } from 'react';
+import React, { useRef, useState, useContext, MouseEvent, TouchEvent } from 'react';
 import Feild, { Point } from '../extra/Feild';
 import { useQuery } from '@tanstack/react-query';
 import { Button, Callout, Flex, Spinner } from '@radix-ui/themes';
