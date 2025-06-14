@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Theme } from '@radix-ui/themes';
 import React, { useState } from 'react';
 
@@ -19,8 +19,8 @@ const App: React.FC<unknown> = () => {
 
 	return (
 		<QueryClientProvider client={queryClient}>
-			<Theme appearance={theme} accentColor="teal" grayColor="gray">
-				<BrowserRouter>
+			<Theme appearance={theme} accentColor="amber" grayColor="gray">
+				<HashRouter>
 					<Routes>
 						<Route index element={<Home changeTheme={changeTheme} theme={theme} />} />
 						<Route path="/ws" element={<Workspace />} />
@@ -33,7 +33,7 @@ const App: React.FC<unknown> = () => {
 							}
 						/>
 					</Routes>
-				</BrowserRouter>
+				</HashRouter>
 				{/* <ThemePanel /> */}
 				{/* <ReactQueryDevtools /> */}
 			</Theme>

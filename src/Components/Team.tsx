@@ -1,66 +1,55 @@
 import React from 'react';
 
 import { Frame } from './Mini';
-import { Box, Flex, Heading, Grid, Text, Badge, Avatar, Link, Card } from '@radix-ui/themes';
-import { Pencil2Icon } from '@radix-ui/react-icons';
+import { Box, Flex, Heading, Text, Badge, Avatar, Link } from '@radix-ui/themes';
+import { PersonIcon } from '@radix-ui/react-icons';
 
 const Team: React.FC<unknown> = () => {
 	return (
 		<Frame className="py-48">
 			<Badge variant="soft" radius="full">
 				<Flex gap="2" align="center" px="2">
-					<Pencil2Icon />
-					Built It Myself
+					<PersonIcon />
+					The brains
 				</Flex>
 			</Badge>
 			<Box height="12px" />
-			<Heading size="8">Team & Project Mates</Heading>
+			<Heading size="8">Team & Collaborators</Heading>
 			<Box height="24px" />
 			<Text as="div" size="2" className="opacity-70">
-				All coding projects are built from the ground up, from ideation, designing and planning, all the way to finalizing it with
-				my own artistic touches. All the project are built with care and proffessionalism, everything is available on my github.
+				Great ideas flourish through great partnerships. I excel at building strong working relationships with other developers, environments where creativity meets execution. I believe the
+				best solutions emerge when talented people unite around a shared vision.
 			</Text>
 			<Box height="46px" />
-			<Card>
-				<Flex direction="column" gap="4">
-					<Flex gap="4" align="center" justify="start">
-						<Avatar radius="medium" size="2" src="/profile.jpg" fallback="T"></Avatar>
-						<Link size="1" className="cursor-pointer" style={{ width: 160 }}>
-							tarikkudesu
-						</Link>
-						<Text size="1" className="opacity-80 cursor-pointer">
-							amehritarik@gmail.com
-						</Text>
-					</Flex>
-					<Flex gap="4" align="center" justify="start">
-						<Avatar radius="medium" size="2" src="/profile.jpg" fallback="T"></Avatar>
-						<Link size="1" className="cursor-pointer" style={{ width: 160 }}>
-							otman oulcaid
-						</Link>
-						<Text size="1" className="opacity-80 cursor-pointer">
-							amehritarik@gmail.com
-						</Text>
-					</Flex>
-					<Flex gap="4" align="center" justify="start">
-						<Avatar radius="medium" size="2" src="/profile.jpg" fallback="T"></Avatar>
-						<Link size="1" className="cursor-pointer" style={{ width: 160 }}>
-							mustapha zahiri
-						</Link>
-						<Text size="1" className="opacity-80 cursor-pointer">
-							amehritarik@gmail.com
-						</Text>
-					</Flex>
-					<Flex gap="4" align="center" justify="start">
-						<Avatar radius="medium" size="2" src="/profile.jpg" fallback="T"></Avatar>
-						<Link size="1" className="cursor-pointer" style={{ width: 160 }}>
-							omar omghazi
-						</Link>
-						<Text size="1" className="opacity-80 cursor-pointer">
-							amehritarik@gmail.com
-						</Text>
-					</Flex>
+			<Flex direction="column" gap="4">
+				<Flex gap="4" align="center" justify="start">
+					<Avatar radius="medium" size="2" src="https://avatars.githubusercontent.com/u/57399454?v=4" fallback="T"></Avatar>
+					<Text size="1" style={{ width: 160 }}>
+						Otman Oulcaid
+					</Text>
+					<Link target="_blank" href="https://github.com/otmanoulcaid/" size="1" className="opacity-80 cursor-pointer">
+						github.com/otmanoulcaid
+					</Link>
 				</Flex>
-			</Card>
+				<Flex gap="4" align="center" justify="start">
+					<Avatar radius="medium" size="2" src="https://avatars.githubusercontent.com/u/150599684?v=4" fallback="T"></Avatar>
+					<Text size="1" style={{ width: 160 }}>
+						El Mustapha Zahiri
+					</Text>
+					<Link target="_blank" href="https://github.com/ezahiri10/" size="1" className="opacity-80 cursor-pointer">
+						github.com/ezahiri10
+					</Link>
+				</Flex>
+				<Flex gap="4" align="center" justify="start">
+					<Avatar radius="medium" size="2" src="https://avatars.githubusercontent.com/u/111459163?v=4" fallback="T"></Avatar>
+					<Text size="1" style={{ width: 160 }}>
+						Omar Ghazi
+					</Text>
+					<Link target="_blank" href="https://github.com/otmanoulcaid/" size="1" className="opacity-80 cursor-pointer">
+						github.com/om7gh
+					</Link>
+				</Flex>
+			</Flex>
 		</Frame>
 	);
 };

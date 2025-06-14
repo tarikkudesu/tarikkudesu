@@ -1,9 +1,12 @@
-import React, { useRef, useState, useEffect, MouseEvent, WheelEvent } from 'react';
+import React, { useRef, useState, useEffect, MouseEvent } from 'react';
 import Feild, { Point } from '../extra/Feild';
 import { useQuery } from '@tanstack/react-query';
+import { Button, Callout, Flex, Spinner } from '@radix-ui/themes';
+import { InfoCircledIcon, MinusIcon, PlusIcon } from '@radix-ui/react-icons';
+import { API } from '../Functionaity/Interfaces';
 
-export const gridWidth: number = 300;
-export const gridHeight: number = 60;
+export const gridWidth: number = 200;
+export const gridHeight: number = 40;
 
 export interface roadElement {
 	name: string;
@@ -12,38 +15,54 @@ export interface roadElement {
 
 const Workspace: React.FC = () => {
 	async function fetchData() {
-		const response = await fetch('/json/roadmap.json');
+		const response = await fetch(API.Roadmap);
 		return response.json();
 	}
-	const { isLoading, error, data } = useQuery<roadElement[]>({
+	const { isLoading, error, data } = useQuery({
 		queryKey: ['roadmap'],
 		queryFn: fetchData,
 	});
 
+	function CondotionalComponent(): React.ReactNode {
+		if (isLoading)
+			return (
+				<Flex align="center" justify="center">
+					<Spinner size="3" />
+				</Flex>
+			);
+		if (error)
+			return (
+				<Callout.Root color="red">
+					<Callout.Icon>
+						<InfoCircledIcon />
+					</Callout.Icon>
+					<Callout.Text>Something went wrong while loading data. If this keeps happening, feel free to reach out — I’ll fix it as soon as possible.</Callout.Text>
+				</Callout.Root>
+			);
+		return (
+			<>
+				{data.map((ele: roadElement, index: number) => {
+					return <Feild right={index === data.length - 1 ? false : true} left={index === 0 ? false : true} name={ele.name} x={index * 3} childs={ele.sub} key={index} />;
+				})}
+			</>
+		);
+	}
 	const containerRef = useRef<HTMLDivElement>(null);
 	const [isDragging, setIsDragging] = useState(false);
 	const [origin, setOrigin] = useState<Point>({ x: 0, y: 0 });
-	const [translate, setTranslate] = useState<Point>({ x: 0, y: 0 });
+	const [translate, setTranslate] = useState<Point>({ x: 0, y: window.innerHeight / 2 });
 	const [zoom, setZoom] = useState<number>(1);
 
-	// Start dragging
 	const handleMouseDown = (e: MouseEvent<HTMLDivElement>) => {
 		setIsDragging(true);
 		setOrigin({ x: e.clientX, y: e.clientY });
 	};
 
-	// While dragging
 	const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
 		if (!isDragging) return;
-
 		const dx = e.clientX - origin.x;
 		const dy = e.clientY - origin.y;
-
-		setTranslate((prev) => ({
-			x: prev.x + dx,
-			y: prev.y + dy,
-		}));
-
+		setTranslate((prev) => ({ x: prev.x + dx, y: prev.y + dy }));
 		setOrigin({ x: e.clientX, y: e.clientY });
 	};
 
@@ -54,62 +73,48 @@ const Workspace: React.FC = () => {
 		return () => window.removeEventListener('mouseup', handleMouseUp);
 	}, []);
 
-	// Zoom from cursor
-	const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
-		// e.preventDefault();
-		if (!containerRef.current) return;
-
-		const rect = containerRef.current.getBoundingClientRect();
-		const cursorX = e.clientX - rect.left;
-		const cursorY = e.clientY - rect.top;
-
-		const deltaScale = e.deltaY > 0 ? 0.9 : 1.1;
-		const newZoom = Math.min(Math.max(zoom * deltaScale, 0.2), 3);
-
-		// Calculate the new translate so the cursor stays in the same place
-		const scaleDiff = newZoom / zoom;
-
-		const newTranslateX = cursorX - scaleDiff * (cursorX - translate.x);
-		const newTranslateY = cursorY - scaleDiff * (cursorY - translate.y);
-
-		setZoom(newZoom);
-		setTranslate({
-			x: newTranslateX,
-			y: newTranslateY,
-		});
-	};
-
-	const arr: string[] = ['1', '2', '3', '4'];
 	return (
 		<>
+			<div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-20">
+				<Button
+					mr="1"
+					variant="outline"
+					onClick={() => {
+						if (zoom <= 5) setZoom(zoom + zoom * 0.1);
+					}}
+				>
+					<PlusIcon />
+				</Button>
+				<Button
+					variant="outline"
+					ml="1"
+					onClick={() => {
+						if (zoom > 0.5) setZoom(zoom - zoom * 0.1);
+					}}
+				>
+					<MinusIcon />
+				</Button>
+			</div>
 			<div
 				ref={containerRef}
 				onMouseDown={handleMouseDown}
 				onMouseMove={handleMouseMove}
-				onWheel={handleWheel}
-				className="h-screen w-screen"
+				className="h-screen w-screen unselectable"
 				style={{
 					overflow: 'hidden',
 					cursor: isDragging ? 'grabbing' : 'grab',
+					backgroundColor: 'var(--accent-2)',
 				}}
 			>
 				<div
 					style={{
 						width: '20000px',
-						height: '2000px',
 						position: 'relative',
 						transform: `translate(${translate.x}px, ${translate.y}px) scale(${zoom})`,
 						transformOrigin: '0 0',
 					}}
 				>
-					<div style={{ display: 'flex', gap: gridWidth }}>
-						{!isLoading &&
-							!error &&
-							data &&
-							data.map((ele: roadElement, index: number) => {
-								return <Feild right={index === arr.length - 1 ? false : true} left={index === 0 ? false : true} name={ele.name} x={index * 2} childs={ele.sub} key={index} />;
-							})}
-					</div>
+					<div style={{ display: 'flex', gap: gridWidth * 2 }}>{CondotionalComponent()}</div>
 				</div>
 			</div>
 		</>

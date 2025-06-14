@@ -7,7 +7,7 @@
 		"Languages": ["TypeScript", "ReactJS", "tailwindcss", "Vite"],
 		"link": "git@github.com:tarikkudesu/verses_web_app.git",
 		"img": "WebTs.png",
-		"date": "20-03-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -17,7 +17,7 @@
 		"Languages": ["cpp", "Makefile"],
 		"link": "https://github.com/tarikkudesu/server.git",
 		"img": "Cpp.png",
-		"date": "14-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -27,7 +27,7 @@
 		"Languages": ["docker", "docker-compose", "virtual-box", "Wordpress", "Nginx", "MariaDb", "redis", "FTP", "adminer"],
 		"link": "https://github.com/tarikkudesu/Inception",
 		"img": "Docker.png",
-		"date": "13-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -37,7 +37,7 @@
 		"Languages": ["Html", "Css", "JavaScript"],
 		"link": "https://github.com/tarikkudesu/sora",
 		"img": "WebJs.png",
-		"date": "11-08-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -47,7 +47,7 @@
 		"Languages": ["cpp", "Makefile"],
 		"link": "https://github.com/tarikkudesu/cpp_modules",
 		"img": "Cpp.png",
-		"date": "11-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -57,17 +57,7 @@
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/Cub3d",
 		"img": "cub3d.png",
-		"date": "10-02-2024"
-	},
-	{
-		"type": "A 42 project",
-		"title": "Philosophers",
-		"description": "It's about time that I made it parallel.",
-		"md": "Philosophers.md",
-		"Languages": ["c", "Makefile"],
-		"link": "https://github.com/tarikkudesu/philosophers",
-		"img": "C.png",
-		"date": "09-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -77,7 +67,17 @@
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/minishell",
 		"img": "C.png",
-		"date": "08-02-2024"
+		"date": ""
+	},
+	{
+		"type": "A 42 project",
+		"title": "Philosophers",
+		"description": "It's about time that I made it parallel.",
+		"md": "Philosophers.md",
+		"Languages": ["c", "Makefile"],
+		"link": "https://github.com/tarikkudesu/philosophers",
+		"img": "C.png",
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -87,7 +87,7 @@
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/fdf",
 		"img": "fdf.png",
-		"date": "07-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -97,7 +97,7 @@
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/pipex",
 		"img": "C.png",
-		"date": "06-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -107,7 +107,7 @@
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/push_swap",
 		"img": "C.png",
-		"date": "05-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -117,7 +117,7 @@
 		"Languages": ["linux", "virtual-box"],
 		"link": "https://github.com/tarikkudesu",
 		"img": "Linux.png",
-		"date": "04-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -127,7 +127,7 @@
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/get_next_line",
 		"img": "C.png",
-		"date": "03-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -137,7 +137,7 @@
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/ft_printf",
 		"img": "C.png",
-		"date": "02-02-2024"
+		"date": ""
 	},
 	{
 		"type": "A 42 project",
@@ -147,6 +147,6 @@
 		"Languages": ["c", "Makefile"],
 		"link": "https://github.com/tarikkudesu/Libft",
 		"img": "C.png",
-		"date": "01-02-2024"
+		"date": ""
 	}
 ]

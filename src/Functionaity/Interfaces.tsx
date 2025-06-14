@@ -8,7 +8,9 @@ export interface Template {
 	img: string;
 	date: string;
 }
-export enum ShowCase {
+export enum API {
 	Projects = './json/projects.json',
 	Writings = './json/writings.json',
+	Roadmap = './json/roadmap.json',
+	Stack = './json/stack.json',
 }

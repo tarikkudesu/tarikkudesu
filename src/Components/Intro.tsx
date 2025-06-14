@@ -5,7 +5,7 @@ import { Flex, Badge, Box, Strong, Button, Text, Link, HoverCard, Avatar, Headin
 import Threads from '../extra/Threads';
 
 const Intro: React.FC<unknown> = () => {
-	const [active, setActive] = useState<Boolean>(false);
+	const [active, setActive] = useState<boolean>(false);
 	return (
 		<>
 			<div className="relative">
@@ -27,56 +27,46 @@ const Intro: React.FC<unknown> = () => {
 					<Box height="8px"></Box>
 					<Box>
 						<Text as="div" weight="bold" align="left" size={{ initial: '8', lg: '9' }}>
-							I Build & Deploy
-						</Text>
-						<Box height="8px"></Box>
-						<Text as="div" weight="bold" align="left" size={{ initial: '8', lg: '9' }}>
-							You
-							<Text style={{ color: 'var(--accent-10)' }} className="pl-4">
-								Interact
-							</Text>{' '}
-							&
-							<Text style={{ color: 'var(--accent-10)' }} className="pl-4">
-								Enjoy
-							</Text>
+							Hi, I am{' '}
+							<HoverCard.Root>
+								<HoverCard.Trigger>
+									<Link href="https://github.com/tarikkudesu" target="_blank">
+										<Text style={{ color: 'var(--accent-10)' }} className="pl-4">
+											Tarik Amehri
+										</Text>
+									</Link>
+								</HoverCard.Trigger>
+								<HoverCard.Content maxWidth="300px">
+									<Flex gap="4">
+										<Avatar size="5" fallback="T" radius="full" src="/profile.png" />
+										<Box>
+											<Heading size="3" as="h3">
+												Tarik Amehri
+											</Heading>
+											<Text as="div" size="2" color="gray" mb="2">
+												@tarikkudesu
+											</Text>
+											<Text as="div" size="2">
+												A Computer Science student at 1337 Khouribga
+											</Text>
+										</Box>
+									</Flex>
+								</HoverCard.Content>
+							</HoverCard.Root>
 						</Text>
 					</Box>
-					<Box height="24px"></Box>
-
-					<Text as="div" align="left" size="4">
-						My name is
-						<HoverCard.Root>
-							<HoverCard.Trigger>
-								<Link href="https://github.com/tarikkudesu" target="_blank">
-									<Strong style={{ color: 'var(--accent-10)' }}> Tarik Amehri </Strong>
-								</Link>
-							</HoverCard.Trigger>
-							<HoverCard.Content maxWidth="300px">
-								<Flex gap="4">
-									<Avatar size="3" fallback="T" radius="full" src="/profile.png" />
-									<Box>
-										<Heading size="3" as="h3">
-											Tarik Amehri
-										</Heading>
-										<Text as="div" size="2" color="gray" mb="2">
-											@tarikkudesu
-										</Text>
-										<Text as="div" size="2">
-											A Computer Science student at 1337 Khouribga
-										</Text>
-									</Box>
-								</Flex>
-							</HoverCard.Content>
-						</HoverCard.Root>
+					<Box height="8px"></Box>
+					<Text size='4'>
 						<Strong>Software Engineer</Strong> / <Strong>Front-End Specialist</Strong>
 					</Text>
+					<Box height="8px"></Box>
 					<Text as="div" align="left" className="max-w-175" size="2">
 						A computer science student at{' '}
 						<Link href="https://1337.ma/en/" weight="bold" color="gray" highContrast target="_blank">
 							1337 coding school
 						</Link>
-						, currently crafting my version of the wonderfull digital world one step at a time. I think about every detail in my work - from idea and analytics to prototype and visual
-						design. into a great and innovative product.
+						, Based in Khouribga - Morocco, with 2+ years of specialized experience in Unix/Linux and modern web development, with a proven ability to solve complex technical challenges
+						and deliver scalable solutions.
 					</Text>
 					<Box height="24px"></Box>
 					<Flex gap="4">

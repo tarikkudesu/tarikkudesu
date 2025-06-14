@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Badge, Box, Flex, Heading, ScrollArea, Text, Callout, Spinner, Button, Grid, Dialog, Link, Card, Inset } from '@radix-ui/themes';
 import { Pencil2Icon, InfoCircledIcon, CaretRightIcon } from '@radix-ui/react-icons';
-import { ShowCase, Template } from '../Functionaity/Interfaces';
+import { API, Template } from '../Functionaity/Interfaces';
 import { marked } from 'marked';
 import { Frame } from './Mini';
 
@@ -42,21 +42,12 @@ const PeiceOfWork: React.FC<PeiceOfWorkProps> = ({ project }) => {
 					<Callout.Icon>
 						<InfoCircledIcon />
 					</Callout.Icon>
-					<Callout.Text>
-						Something went wrong while loading data. If this keeps happening, feel free to reach out — I’ll fix it as soon as
-						possible.
-					</Callout.Text>
+					<Callout.Text>Something went wrong while loading data. If this keeps happening, feel free to reach out — I’ll fix it as soon as possible.</Callout.Text>
 				</Callout.Root>
 			);
 		if (data)
 			return (
-				<ScrollArea
-					type="always"
-					scrollbars="vertical"
-					className="pr-4 overflow-hidden"
-					radius="medium"
-					style={{ height: '500px' }}
-				>
+				<ScrollArea type="always" scrollbars="vertical" className="pr-4 overflow-hidden" radius="medium" style={{ height: '500px' }}>
 					<Markdown markdown={data} />
 				</ScrollArea>
 			);
@@ -126,7 +117,7 @@ const Work: React.FC<unknown> = () => {
 		queryFn: fetchData,
 	});
 	async function fetchData() {
-		const response = await fetch(ShowCase.Projects);
+		const response = await fetch(API.Projects);
 		return response.json();
 	}
 	function CondotionalComponent(): React.ReactNode {
@@ -142,16 +133,17 @@ const Work: React.FC<unknown> = () => {
 					<Callout.Icon>
 						<InfoCircledIcon />
 					</Callout.Icon>
-					<Callout.Text>
-						Something went wrong while loading data. If this keeps happening, feel free to reach out — I’ll fix it as soon as
-						possible.
-					</Callout.Text>
+					<Callout.Text>Something went wrong while loading data. If this keeps happening, feel free to reach out — I’ll fix it as soon as possible.</Callout.Text>
 				</Callout.Root>
 			);
 		return (
 			<Grid gap="7" columns={{ md: '2', lg: '3' }}>
 				{data.map((ele: Template, index: number) => (
-					<PeiceOfWork project={ele} key={index} />
+					<div>
+						<div className="mx-auto" style={{ width: 360, height: 300 }}>
+							<PeiceOfWork project={ele} key={index} />
+						</div>
+					</div>
 				))}
 			</Grid>
 		);
@@ -170,9 +162,8 @@ const Work: React.FC<unknown> = () => {
 				<Heading size="8">My Projects & Work</Heading>
 				<Box height="24px" />
 				<Text as="div" size="2" className="opacity-70">
-					All coding projects are built from the ground up, from ideation, designing and planning, all the way to finalizing it
-					with my own artistic touches. All the project are built with care and proffessionalism, everything is available on my
-					github.
+					I build every project from the ground up, taking each through the full journey from initial concept and design to final implementation with my own creative touches. All work is
+					crafted with care and professional precision—explore the complete collection on my GitHub.
 				</Text>
 				<Box height="46px" />
 				{CondotionalComponent()}
