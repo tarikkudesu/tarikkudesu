@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, MouseEvent, useContext } from 'react';
+import React, { useRef, useState, useEffect, useContext, MouseEvent, TouchEvent } from 'react';
 import Feild, { Point } from '../extra/Feild';
 import { useQuery } from '@tanstack/react-query';
 import { Button, Callout, Flex, Spinner } from '@radix-ui/themes';
@@ -50,29 +50,38 @@ const Workspace: React.FC = () => {
 	const workspace = useContext(workspaceContext);
 	const containerRef = useRef<HTMLDivElement>(null);
 	const [isDragging, setIsDragging] = useState(false);
-	const [origin, setOrigin] = useState<Point>({ x: 0, y: 0 });
+	const [origin, setOrigin] = useState<Point>({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
 	const [translate, setTranslate] = useState<Point>({ x: 0, y: window.innerHeight / 2 });
 	const [zoom, setZoom] = useState<number>(1);
 
-	const handleMouseDown = (e: MouseEvent<HTMLDivElement>) => {
+	const handleStart = (e: MouseEvent<HTMLDivElement> | TouchEvent<HTMLDivElement>) => {
 		setIsDragging(true);
-		setOrigin({ x: e.clientX, y: e.clientY });
+
+		// Get coordinates from either mouse or touch event
+		const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+		const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+
+		setOrigin({ x: clientX, y: clientY });
 	};
 
-	const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
+	const handleMove = (e: MouseEvent<HTMLDivElement> | TouchEvent<HTMLDivElement>) => {
 		if (!isDragging) return;
-		const dx = e.clientX - origin.x;
-		const dy = e.clientY - origin.y;
+
+		// Prevent scrolling on mobile
+		e.preventDefault();
+
+		// Get coordinates from either mouse or touch event
+		const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+		const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+
+		const dx = clientX - origin.x;
+		const dy = clientY - origin.y;
+
 		setTranslate((prev) => ({ x: prev.x + dx, y: prev.y + dy }));
-		setOrigin({ x: e.clientX, y: e.clientY });
+		setOrigin({ x: clientX, y: clientY });
 	};
 
-	const handleMouseUp = () => setIsDragging(false);
-
-	useEffect(() => {
-		window.addEventListener('mouseup', handleMouseUp);
-		return () => window.removeEventListener('mouseup', handleMouseUp);
-	}, []);
+	const handleEnd = () => setIsDragging(false);
 
 	return (
 		<>
@@ -102,8 +111,14 @@ const Workspace: React.FC = () => {
 			</div>
 			<div
 				ref={containerRef}
-				onMouseDown={handleMouseDown}
-				onMouseMove={handleMouseMove}
+				onMouseDown={handleStart}
+				onMouseMove={handleMove}
+				onMouseUp={handleEnd}
+				onMouseLeave={handleEnd}
+				onTouchStart={handleStart}
+				onTouchMove={handleMove}
+				onTouchEnd={handleEnd}
+				onTouchCancel={handleEnd}
 				className="h-screen w-screen unselectable"
 				style={{
 					overflow: 'hidden',
