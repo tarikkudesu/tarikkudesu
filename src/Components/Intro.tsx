@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Frame } from './Mini';
 import { DownloadIcon, MagicWandIcon } from '@radix-ui/react-icons';
 import { Flex, Badge, Box, Strong, Button, Text, Link, HoverCard, Avatar, Heading } from '@radix-ui/themes';
 import Threads from '../extra/Threads';
 
 const Intro: React.FC<unknown> = () => {
+	const [active, setActive] = useState<Boolean>(false);
 	return (
 		<>
 			<div className="relative">
-				<div className="absolute top-100 left-0 right-0">
+				<div className="absolute top-140 left-0 right-0 -z-10">
 					<div style={{ width: '100%', height: '600px', position: 'relative' }}>
 						<Threads amplitude={3} distance={0} enableMouseInteraction={true} />
 					</div>
@@ -74,14 +75,19 @@ const Intro: React.FC<unknown> = () => {
 						<Link href="https://1337.ma/en/" weight="bold" color="gray" highContrast target="_blank">
 							1337 coding school
 						</Link>
-						, currently crafting my version of the wonderfull digital world one step at a time. I think about every detail in my
-						work - from idea and analytics to prototype and visual design. into a great and innovative product.
+						, currently crafting my version of the wonderfull digital world one step at a time. I think about every detail in my work - from idea and analytics to prototype and visual
+						design. into a great and innovative product.
 					</Text>
 					<Box height="24px"></Box>
 					<Flex gap="4">
 						<Link href="#work" className="cursor-pointer">
 							<Button size="2" variant="solid">
 								Projects
+							</Button>
+						</Link>
+						<Link href="/ws">
+							<Button size="2" variant="outline" onClick={() => setActive(!active)}>
+								Roadmap
 							</Button>
 						</Link>
 						<Link href="/Amehri Tarik.pdf" download="Amehri Tarik.pdf" className="cursor-pointer">

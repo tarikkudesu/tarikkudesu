@@ -1,0 +1,203 @@
+[
+	{
+		"name": "C",
+		"sub": [
+			"Basic syntax",
+			"Control flow",
+			"Functions",
+			"Preprocessor directives",
+			"macros",
+			"Structures",
+			"Typedefs/enums",
+			"Command-line arguments",
+			"Dynamic memory",
+			"Pointers",
+			"Stack/Heap",
+			"I/O"
+		]
+	},
+	{
+		"name": "Unix Programming",
+		"sub": [
+			"Makefile",
+			"Compilation",
+			"System Calls & File I/O",
+			"Processes",
+			"Interprocess Communication (IPC)",
+			"Signals",
+			"Pipes",
+			"File System Operations",
+			"Multithreading (POSIX Threads)",
+			"Networking (Socket API)"
+		]
+	},
+	{
+		"name": "Linux",
+		"sub": [
+			"Basic Commands",
+			"Viewing & Editing Files",
+			"File Permissions & Ownership",
+			"Searching & Finding",
+			"Processes & System Info",
+			"Package Management",
+			"User & Group Management",
+			"Archiving & Compression",
+			"file systems"
+		]
+	},
+	{ "name": "Git & GitHub", "sub": ["Basics", "History", "Undoing Changes", "Viewing diffs", "Rewriting history", "Branches", "Remotes", "GitHub Pages"] },
+	{ "name": "Data Structures", "sub": ["Arrays and strings", "Linked lists", "Stacks and queues", "Hash tables", "Trees"] },
+	{ "name": "OOP", "sub": ["Encapsulation", "Abstraction", "Inheritance", "Polymorphism"] },
+	{
+		"name": "C++",
+		"sub": [
+			"basic syntax",
+			"Control flow",
+			"function overloading",
+			"Pointers/references",
+			"Dynamic memory",
+			"Classes/objects",
+			"Orthodox Canonical Form",
+			"Constructors/destructors",
+			"Copy constructors/Copy assignment operators",
+			"Operator overloading",
+			"Inheritance and polymorphism",
+			"Templates functions",
+			"Class templates",
+			"Standard Template Library",
+			"Exception handling",
+			"Namespaces",
+			"Streams"
+		]
+	},
+	{ "name": "Networking", "sub": ["OSI and TCP/IP models", "IP addressing/subnetting", "MAC addresses", "Ports", "TCP/UDP", "HTTP/HTTPS", "Socket programming", "SSL/TLS encryption"] },
+	{
+		"name": "JavaScript",
+		"sub": [
+			"Variables & types",
+			"Functions & scopes",
+			"Closures & callbacks",
+			"Promises & async",
+			"Event handling",
+			"DOM manipulation",
+			"ES6+ features",
+			"Objects & arrays",
+			"Prototypes & inheritance",
+			"Modules & imports",
+			"Error handling",
+			"Fetch & AJAX",
+			"Event loop",
+			"Functional programming",
+			"Async/await",
+			"Destructuring",
+			"Spread/rest operators",
+			"Classes & OOP"
+		]
+	},
+	{ "name": "Containerization", "sub": ["containers vs virtual machines", "Docker", "Docker Engine", "Docker Images", "Docker Volumes", "Docker Netwoks", "Docker Compose", "Docker Hub"] },
+	{
+		"name": "Nginx",
+		"sub": [
+			"Reverse proxy",
+			"Load balancing",
+			"SSL/TLS setup",
+			"Server blocks",
+			"URL rewriting",
+			"Caching configuration",
+			"Compression (gzip)",
+			"Access control",
+			"Logging setup",
+			"Static file serving",
+			"FastCGI integration",
+			"WebSocket proxying",
+			"HTTP/2 support",
+			"Error pages"
+		]
+	},
+	{
+		"name": "TypeScript",
+		"sub": [
+			"Static typing",
+			"Interfaces",
+			"Type aliases",
+			"EnumsGenerics",
+			"Union types",
+			"Intersection types",
+			"Type inference",
+			"Type assertions",
+			"Modules & namespaces",
+			"Decorators",
+			"Utility types",
+			"Strict mode",
+			"Optional chaining",
+			"Tuple types",
+			"Function types"
+		]
+	},
+	{
+		"name": "React",
+		"sub": [
+			"JSX syntax",
+			"Components",
+			"Props & state",
+			"Hooks",
+			"Event handling",
+			"Conditional rendering",
+			"Context API",
+			"Routing (React Router)",
+			"Forms & validation",
+			"Higher-order components",
+			"Error boundaries",
+			"Refs & DOM",
+			"Code splitting",
+			"React-Router",
+			"React-Query"
+		]
+	},
+	{
+		"name": "Tailwindcss",
+		"sub": [
+			"Utility classes",
+			"Responsive design",
+			"Custom configuration",
+			"Dark mode",
+			"Flexbox/grid",
+			"Spacing/margin/padding",
+			"Typography styling",
+			"Color customization",
+			"Pseudo-classes (hover, focus)"
+		]
+	},
+	{
+		"name": "Redux",
+		"sub": [
+			"Store setup",
+			"Actions & types",
+			"Reducers",
+			"Dispatching actions",
+			"Middleware usage",
+			"Selectors",
+			"State immutability",
+			"Combine reducers",
+			"DevTools integration",
+			"Redux Toolkit",
+			"Error handling"
+		]
+	},
+	{
+		"name": "Sqlite",
+		"sub": [
+			"Data types",
+			"SQL queries",
+			"Database creation",
+			"Table creation",
+			"Data insertion",
+			"Data retrieval",
+			"Indexing tables",
+			"Joins usage",
+			"Triggers setup",
+			"Prepared statements",
+			"Foreign keys"
+		]
+	}
+]

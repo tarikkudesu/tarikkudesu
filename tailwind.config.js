@@ -8,5 +8,5 @@ module.exports = {
 			stroke: ['hover', 'focus'],
 		},
 	},
-	plugins: [require("tailwind-scrollbar")],
+	plugins: [require('tailwind-scrollbar')],
 };
