@@ -66,7 +66,7 @@ const Feild: React.FC<FeildProps> = ({ name, x, childs, right, left }) => {
 						left: 0,
 						width: gridWidth,
 						height: gridHeight,
-						color: 'white',
+						color: 'var(--accent-1)',
 						backgroundColor: 'var(--accent-10)',
 					}}
 					className="rounded-md flex justify-center items-center z-10"
