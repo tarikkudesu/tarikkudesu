@@ -1,3 +1,5 @@
+import { createContext } from 'react';
+
 export interface Template {
 	type: string;
 	title: string;
@@ -14,3 +16,7 @@ export enum API {
 	Roadmap = './json/roadmap.json',
 	Stack = './json/stack.json',
 }
+
+export const workspaceContext = createContext<(value: boolean) => boolean>((_value: boolean) => {
+	return _value;
+});

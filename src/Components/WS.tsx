@@ -1,9 +1,9 @@
-import React, { useRef, useState, useEffect, MouseEvent } from 'react';
+import React, { useRef, useState, useEffect, MouseEvent, useContext } from 'react';
 import Feild, { Point } from '../extra/Feild';
 import { useQuery } from '@tanstack/react-query';
 import { Button, Callout, Flex, Spinner } from '@radix-ui/themes';
 import { InfoCircledIcon, MinusIcon, PlusIcon } from '@radix-ui/react-icons';
-import { API } from '../Functionaity/Interfaces';
+import { API, workspaceContext } from '../Functionaity/Interfaces';
 
 export const gridWidth: number = 200;
 export const gridHeight: number = 40;
@@ -47,6 +47,7 @@ const Workspace: React.FC = () => {
 			</>
 		);
 	}
+	const workspace = useContext(workspaceContext);
 	const containerRef = useRef<HTMLDivElement>(null);
 	const [isDragging, setIsDragging] = useState(false);
 	const [origin, setOrigin] = useState<Point>({ x: 0, y: 0 });
@@ -76,8 +77,12 @@ const Workspace: React.FC = () => {
 	return (
 		<>
 			<div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-20">
+				<Button variant="outline" mr="1" onClick={() => workspace(false)}>
+					Home
+				</Button>
 				<Button
 					mr="1"
+					ml="1"
 					variant="outline"
 					onClick={() => {
 						if (zoom <= 5) setZoom(zoom + zoom * 0.1);

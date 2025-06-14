@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Frame } from './Mini';
 import { DownloadIcon, MagicWandIcon } from '@radix-ui/react-icons';
 import { Flex, Badge, Box, Strong, Button, Text, Link, HoverCard, Avatar, Heading } from '@radix-ui/themes';
 import Threads from '../extra/Threads';
+import { workspaceContext } from '../Functionaity/Interfaces';
 
 const Intro: React.FC<unknown> = () => {
-	const [active, setActive] = useState<boolean>(false);
+	const workspace = useContext(workspaceContext);
 	return (
 		<>
 			<div className="relative">
@@ -56,7 +57,7 @@ const Intro: React.FC<unknown> = () => {
 						</Text>
 					</Box>
 					<Box height="8px"></Box>
-					<Text size='4'>
+					<Text size="4">
 						<Strong>Software Engineer</Strong> / <Strong>Front-End Specialist</Strong>
 					</Text>
 					<Box height="8px"></Box>
@@ -75,11 +76,9 @@ const Intro: React.FC<unknown> = () => {
 								Projects
 							</Button>
 						</Link>
-						<Link href="/ws">
-							<Button size="2" variant="outline" onClick={() => setActive(!active)}>
+							<Button size="2" variant="outline" onClick={() => workspace(true)}>
 								Roadmap
 							</Button>
-						</Link>
 						<Link href="/Amehri Tarik.pdf" download="Amehri Tarik.pdf" className="cursor-pointer">
 							<Button size="2" variant="outline">
 								<Flex align="center" gap="2">
